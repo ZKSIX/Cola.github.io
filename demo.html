@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<style>
+    body{
+    	background: url('http://api.dujin.org/bing/1920.php');
+    }
+</style>
+<body>
+<script>
+$.ajax({
+type: "GET",
+url: "http://api.dujin.org/bing/1920.php",
+data: "",
+success: function(msg){
+	console.log(msg);
+}
+});
+
+    $(function () {
+    	console.log("1");
+        $("body").css('background','http://api.dujin.org/bing/1920.php');
+    })
+
+</script>
+</body>
+</html>
