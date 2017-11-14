@@ -25,7 +25,7 @@
         //$('body').css('background-image','url("http://api.dujin.org/bing/1920.php")');
         $.ajax({
             type:'get',//请求方式
-            url: "https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+            url: "cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
             dataType: "jsonp",
             success: function(msg){
                 //var data = JSON.parse(msg);
@@ -37,7 +37,7 @@
         });
         $.ajax({
             type: "GET",
-            url: "http://wthrcdn.etouch.cn/weather_mini?city=广州",
+            url: "wthrcdn.etouch.cn/weather_mini?city=广州",
             data: "",
             success: function(msg){
                 var oJson = JSON.parse(msg);
