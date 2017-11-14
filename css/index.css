@@ -1,0 +1,55 @@
+html,
+body,
+div {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: url('http://api.dujin.org/bing/1920.php') no-repeat;
+}
+h1 {
+  color: white;
+  font-size: 6rem;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  text-shadow: black 5px 5px 5px ;
+}
+aside {
+  width: 300px;
+  height: 100%;
+  background: #f4f4f4;
+  padding: 1%;
+  padding-top: 5%;
+  box-sizing: border-box;
+}
+aside h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Arial;
+  margin: 0px;
+}
+aside p {
+  text-align: right;
+}
+aside ul {
+  padding-top: 50px;
+}
+aside ul li {
+  list-style: none;
+  padding-left: 5%;
+  line-height: 2.5rem;
+}
+aside ul a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+}

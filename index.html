@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="shortcut icon" href="img/Cola.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<style>
-    body{
-    	background: url('http://api.dujin.org/bing/1920.php');
-    }
-</style>
 <body>
-<script>
-$.ajax({
-type: "GET",
-url: "http://api.dujin.org/bing/1920.php",
-data: "",
-success: function(msg){
-	console.log(msg);
-}
-});
-
-    $(function () {
-    	console.log("1");
-        $("body").css('background','http://api.dujin.org/bing/1920.php');
-    })
-
-</script>
+    <aside>
+        <h2>Cola's land</h2>
+        <p>—this is Cola speaking</p>
+        <ul>
+            <li><a href="">Bing Today</a></li>
+            <li><a href="">Bing Today</a></li>
+            <li><a href="">Bing Today</a></li>
+            <li><a href="">about me</a></li>
+        </ul>
+    </aside>
 </body>
 </html>
+<script type="text/javascript">
+    $(function () {
+        //$('body').css('background-image','url("http://api.dujin.org/bing/1920.php")');
+        $.ajax({
+            type:'get',//请求方式
+            url: "https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+            dataType: "jsonp",
+            success: function(msg){
+                //var data = JSON.parse(msg);
+                console.log("kkk");
+            },
+            error:function () {
+                console.log("aaa")
+            }
+        });
+        /*$.ajax({
+            type: "GET",
+            url: "http://wthrcdn.etouch.cn/weather_mini?city=广州",
+            data: "",
+            success: function(msg){
+                var oJson = JSON.parse(msg);
+                console.log(oJson);
+                console.log(oJson.data.city);
+            }
+        });*/
+
+    });
+</script>
